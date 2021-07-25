@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<group>
+	<int_Slider>64</int_Slider>
+	<float_Slider>64.5</float_Slider>
+	<toggle>1</toggle>
+	<int_field>100</int_field>
+	<float_field>100</float_field>
+	<text_field>text</text_field>
+	<vec2_Slider>235.102, 184.163</vec2_Slider>
+	<vec3_Slider>100, 150, 90</vec3_Slider>
+	<vec4_Slider>255, 19.5153, 10.4082, 0</vec4_Slider>
+	<sliders>
+		<Pixels>61</Pixels>
+		<float_Slider>32</float_Slider>
+	</sliders>
+	<Resolution>12</Resolution>
+	<Size>105</Size>
+	<Show_Video>1</Show_Video>
+	<Position>341, 256</Position>
+	<Colour>255, 2, 1, 255</Colour>
+	<Vector_Size>156</Vector_Size>
+	<Show_Shader>0</Show_Shader>
+</group>
