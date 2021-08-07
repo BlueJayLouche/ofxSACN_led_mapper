@@ -15,14 +15,10 @@ class ofxCustomPixelRing{
 
 public:
 
-    void setup(int circleSize,int radius, int shiftX, int shiftY, int spacing);
-    void drawSampleRegion(bool hideArea);
-    void ledObject();
-    void draw(int x, int y);
+    void setup(int ledCount,int radius, int shiftX, int shiftY, int spacing);
     vector<glm::vec2> getPosition();
-    int circleSize();
+    int getSize();
 
-    int size;
     vector<glm::vec2> pos;
 
 private:

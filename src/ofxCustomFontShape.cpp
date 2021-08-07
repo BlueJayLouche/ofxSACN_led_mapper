@@ -6,10 +6,10 @@
 //
 
 #include "ofxCustomFontShape.hpp"
-void ofxCustomFontShape::setup(uint32_t letter, int size, int spacing, glm::vec2 position)
+void ofxCustomFontShape::setup(uint32_t letter, int scale, int ledCount, glm::vec2 position)
 {
-    _size = size;
-    font.load("/Users/administrator/Developer/of_v0.11.0_osx_release/apps/myApps/fontingAbout/bin/data/fonts/The Fortune.otf", size, true, true, true);
+//    _scale = scale;
+    font.load("/Users/administrator/Developer/of_v0.11.0_osx_release/apps/myApps/fontingAbout/bin/data/fonts/The Fortune.otf", scale, true, true, true);
     
     bool vflip = true;
     bool filled = false;
@@ -22,7 +22,7 @@ void ofxCustomFontShape::setup(uint32_t letter, int size, int spacing, glm::vec2
     vector<ofPolyline> nPolylines = nLetter.getOutline();
     
     for (int j = 0; j<nPolylines.size(); j++){
-        ofPolyline outline = nPolylines[j].getResampledBySpacing(spacing);
+        ofPolyline outline = nPolylines[j].getResampledByCount(ledCount);
         outline.translate(adjustedPos);
         for (int k = 0; k < outline.size(); k++){
             
@@ -37,7 +37,7 @@ vector<glm::vec2> ofxCustomFontShape::getPosition()
 {
     return pos;
 }//--------------------------------------------------------------
-int ofxCustomFontShape::circleSize()
+int ofxCustomFontShape::getSize()
 {
-    return _size;
+    return pos.size();
 }
