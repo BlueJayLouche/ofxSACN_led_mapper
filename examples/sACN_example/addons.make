@@ -1,0 +1,6 @@
+ofxFft
+ofxGui
+ofxNetwork
+ofxSACN_led_mapper
+ofxShadertoy
+ofxSvg
