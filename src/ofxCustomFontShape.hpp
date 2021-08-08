@@ -15,14 +15,14 @@ class ofxCustomFontShape{
     
 public:
     
-    void setup(uint32_t letter, int size, int spacing, glm::vec2 position);
+    void setup(uint32_t letter, int scale, int ledCount, glm::vec2 position);
     void drawSampleRegion(bool hideArea);
     void ledObject();
     void draw(int x, int y);
     vector<glm::vec2> getPosition();
-    int circleSize();
+    int getSize();
     
-    int _size;
+//    int _size;
     vector<glm::vec2> pos;
     
     ofTrueTypeFont font;
